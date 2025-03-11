@@ -8,17 +8,17 @@ import java.util.*;
  */
 
 public class Book {
-	private int bookId;
+	private Integer bookId;
 	private String bookTitle;
 	private String bookAuthor;
-	private int bookPrice;
+	private Integer bookPrice;
 	private String bookCategory;
 
 	/*
 	 * creating a constructor for the class and assigning the attribute values
 	 */
 
-	public Book(int bookId, String bookTitle, String bookAuthor, int bookPrice, String bookCategory){ 
+	public Book(Integer bookId, String bookTitle, String bookAuthor, Integer bookPrice, String bookCategory){ 
 		this.bookId = bookId;
 		this.bookTitle = bookTitle;
 		this.bookAuthor = bookAuthor;
@@ -34,7 +34,7 @@ public class Book {
 		return bookId;
 	}
 
-	public void setBookId(int bookId) {
+	public void setBookId(Integer bookId) {
 		this.bookId = bookId;
 	}
 
@@ -58,7 +58,7 @@ public class Book {
 		return bookPrice;
 	}
 
-	public void setBookPrice(int bookPrice) {
+	public void setBookPrice(Integer bookPrice) {
 		this.bookPrice = bookPrice;
 	}
 

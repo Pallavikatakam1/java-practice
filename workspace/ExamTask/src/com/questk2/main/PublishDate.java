@@ -14,7 +14,7 @@ class LatestBook extends Book {
 	 * Latest book
 	 * using the super class to initialize the attributes from the parent class book to subclass LatestBook
 	 */
-	public LatestBook(int bookId, String bookTitle, String bookAuthor, int bookPrice, String bookCategory,
+	public LatestBook(Integer bookId, String bookTitle, String bookAuthor, Integer bookPrice, String bookCategory,
 			Date publishDate) {
 		super(bookId, bookTitle, bookAuthor, bookPrice, bookCategory);
 		this.PublishDate = publishDate;
