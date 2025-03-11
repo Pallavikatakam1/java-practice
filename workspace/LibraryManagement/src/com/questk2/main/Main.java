@@ -20,7 +20,7 @@ public class Main {
 		}
 
 		TrackingSystem trackingSystem = new TrackingSystem();
-		trackingSystem.trackBorrowedBooks(1, 101);
+		trackingSystem.trackBorrowedBooks(1,101);
 
 		LateFee latefee = new LateFee();
 		latefee.makePayment(1, 101, 3);
