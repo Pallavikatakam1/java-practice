@@ -1,7 +1,5 @@
 package com.questk2.repository;
 
-
-
 import java.util.List;
 
 import org.springframework.data.jpa.repository.JpaRepository;

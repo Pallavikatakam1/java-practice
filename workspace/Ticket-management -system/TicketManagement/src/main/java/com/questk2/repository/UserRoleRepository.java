@@ -7,6 +7,7 @@ import org.springframework.stereotype.Repository;
 
 import com.questk2.entity.UserRole;
 @Repository
+
 public interface UserRoleRepository extends JpaRepository<UserRole, Long> {
 
 	Optional<UserRole> findByRoleName(String roleName);

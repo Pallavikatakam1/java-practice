@@ -10,4 +10,5 @@ import com.questk2.entity.User;
 @Repository
 public interface UserRepository extends JpaRepository<User, Long>{
 	Optional<User> findByUserNameAndPassword(String userName, String password);
+	
 }

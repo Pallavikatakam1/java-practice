@@ -14,29 +14,30 @@ import com.fasterxml.jackson.annotation.JsonBackReference;
 import io.swagger.v3.oas.annotations.media.Schema;
 
 /**
- * Entity class representing a User's Role.
- * This class maps to the 'user_role' table in the database.
+ * Entity class representing a User's Role. This class maps to the 'user_role'
+ * table in the database.
  */
+
 @Entity
-@Table(name="user_role")
+@Table(name = "user_role")
 public class UserRole {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	@Schema(description = "Id for the User role")
 	@NotBlank(message = "Id is auto generated")
 	private Long id;
-	
+
 	@Schema(description = "User Id from the User table")
 	@ManyToOne
-    @JoinColumn(name = "user_id", nullable = false)
+	@JoinColumn(name = "user_id", nullable = false)
 	@JsonBackReference
-    private User user;
-	
+	private User user;
+
 	@Schema(description = "Role name for the User")
 	private String roleName;
-	
+
 	public UserRole() {
-		
+
 	}
 
 	public UserRole(User user, String roleName) {

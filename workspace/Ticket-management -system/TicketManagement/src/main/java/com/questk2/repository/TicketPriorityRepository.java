@@ -7,4 +7,5 @@ import com.questk2.entity.TicketPriority;
 @Repository
 public interface TicketPriorityRepository extends JpaRepository<TicketPriority, Long> {
 
+	
 }
