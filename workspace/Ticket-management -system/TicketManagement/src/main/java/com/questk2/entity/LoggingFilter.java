@@ -15,8 +15,8 @@ import org.springframework.stereotype.Component;
 /**
  * A servlet filter that logs incoming request URIs.
  */
-@Component
-@WebFilter(urlPatterns = "/*")
+//@Component
+//@WebFilter(urlPatterns = "/*")
 public class LoggingFilter implements Filter {
 	/**
 	 * Intercepts HTTP requests and logs the request URI before passing the request
